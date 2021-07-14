@@ -1,0 +1,265 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ececec;
+}
+
+/*---------------------------
+     header styles start
+     --------------------*/
+.header-section{
+    background-color: #2D25A0;
+} 
+.header-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+#header-size{
+    width: 400px;
+    height: 230px;
+    color:white;
+    font-size: 3em;
+    font-weight: 700; 
+}
+.header-paragraph{
+    width: 150px;
+    height: 34px;
+    margin-top: -60px;
+    color: #ffffff;
+    background-color: #E02C6D;    ;
+    padding-top: 10px;
+    padding-left: 20px;
+    align-content: center;
+    justify-content: center;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+.fas{
+    padding-left: 20px;
+}
+
+.image{
+    padding-left: 40px;
+}
+#banner-img{
+    width: 556.01px;
+    height: 438px;
+}
+p{
+    color: #6C6C6C;
+}
+/* hover */
+.header-h2 h2:hover{
+    transform: scale(1.1);
+}
+.header-h2 p:hover{
+    color:rgb(209, 187, 187);
+}
+#banner-img:hover{
+    transform: scale(1.1);
+}
+/*--------------------------
+ header styles finished 
+ ------------------------*/
+
+ /* players style start */
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+ .container{
+    width: 300px;
+    height: 550px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+ .container img{
+    width: 300px;
+    height: 256px;
+ }
+ .players-section h2{
+    color: #18191F;
+ }
+ .players{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 30px;
+     grid-row-gap: 10px;
+}
+/* buy styles (BONUS) */
+.buy-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.buy-now{
+    margin-top: 50px;
+    border-top: 3px solid #2D25A0;
+}
+.all-buy{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 30px;
+     grid-row-gap: 10px;
+}
+.buy{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.buy-details{
+    display: flex;
+    flex-direction: column;
+}
+.buy img{
+    border-bottom: 1px solid #2D25A0;
+}
+.cart{
+    background-color: #2D25A0;
+    /* width: 300px;
+    height: 60px; */
+    padding-left: 17%;
+    border-radius: 7px;
+}
+.cart a{
+    color:rgb(255, 255, 255);
+}
+.cart .fas{
+    padding-right: 35px;
+}
+/* youtube play styles */
+.youtube-play h2{
+    width: 585px;
+    height: 230px;
+    color:#0A0826;
+    font-size: 3em;
+    font-weight: 700; 
+    padding-left: 320px;
+}
+.ytplay{
+    display: flex;
+    margin-top: 10%;
+    margin:60px;
+}
+/* highlights styles */
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 60px;
+    margin-top: 150px;
+}
+.highlights-details h2{
+    width: 485px;
+    height: 230px;
+    color:#0A0826;
+    font-size: 3em;
+    font-weight: 700; 
+}
+#highlights-paragraph{
+    margin-top: -90px;
+}
+#match{
+    width: 567px;
+    height: 427px;
+    padding-left: 120px;
+}
+#highlights-paragraph2{
+    width: 150px;
+    height: 34px;
+    color: #ffffff;
+    background-color: #E02C6D;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+/* footer styles */
+#logo{
+    width: 500px;
+}
+.social{
+    margin: 20px;
+}
+.social img{
+    width: 32px;
+    height: 32px;
+}
+footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+/*-------------- 
+    Media Queries
+    -----------------*/
+    /* Mobile Device */
+    @media only screen and (max-width:688px) {
+        .header-section, .players-section, .buy-section{
+            width: 100%;
+            height: auto;
+        }
+        .header-h2{
+            width: auto;
+            height: auto;
+        }
+        .image{
+            width: auto;
+            height: auto;
+        }
+        .header-div, .players, .all-buy{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .header-div, .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .youtube-play{
+            width: 100%;
+            height: auto;
+        }
+        .ytplay{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .yt h2{
+            width: 50%;
+        }
+        .highlights{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+        #match{
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-right: 10%;
+        }
+        .highlights-details h2{
+            width: 100%;
+            height: auto;
+            padding-bottom: 40px;
+        }
+        #highlights-paragraph{
+            margin-top: 100px;
+        }
+        .footer #logo{
+            width: 50%;
+        }
+        
+    }
